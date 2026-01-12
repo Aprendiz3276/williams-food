@@ -1,6 +1,6 @@
 import { X } from 'lucide-react';
-import menuImage1 from 'figma:asset/4faac757aef4d11eb3228f2f3aa02c591ccca4a5.png';
-import menuImage2 from 'figma:asset/ed410f4b4c9ec130de59faebe84246d0dd3ac657.png';
+import menuImage1 from '@/assets/4faac757aef4d11eb3228f2f3aa02c591ccca4a5.png';
+import menuImage2 from '@/assets/ed410f4b4c9ec130de59faebe84246d0dd3ac657.png';
 
 interface MenuModalProps {
   isOpen: boolean;

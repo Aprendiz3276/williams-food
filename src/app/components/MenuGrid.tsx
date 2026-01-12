@@ -1,11 +1,11 @@
-import img1 from 'figma:asset/509bc1d6a76697d1d27d48603e92e8a5950c05c8.png';
-import img2 from 'figma:asset/40281ffd448a3d4deda52313afaa8c91f8728e0b.png';
-import img3 from 'figma:asset/293ae4d309f1237f9687ec6457b7fa612dfcafd2.png';
-import img4 from 'figma:asset/cae09528a0fd0eded6e7826905ea5e9f12577d2e.png';
-import img5 from 'figma:asset/099c401ebcdf4b497920ce830b202c25451da4f0.png';
-import img6 from 'figma:asset/a4e3acb89887aa9acf8644550a54747e7f2bf4db.png';
-import img7 from 'figma:asset/229ffa280f6e0621542a815d09b19b8408102950.png';
-import img8 from 'figma:asset/9baa24592f226b5ed4c53852ad73134efb888d23.png';
+import img1 from '@/assets/509bc1d6a76697d1d27d48603e92e8a5950c05c8.png';
+import img2 from '@/assets/40281ffd448a3d4deda52313afaa8c91f8728e0b.png';
+import img3 from '@/assets/293ae4d309f1237f9687ec6457b7fa612dfcafd2.png';
+import img4 from '@/assets/cae09528a0fd0eded6e7826905ea5e9f12577d2e.png';
+import img5 from '@/assets/099c401ebcdf4b497920ce830b202c25451da4f0.png';
+import img6 from '@/assets/a4e3acb89887aa9acf8644550a54747e7f2bf4db.png';
+import img7 from '@/assets/229ffa280f6e0621542a815d09b19b8408102950.png';
+import img8 from '@/assets/9baa24592f226b5ed4c53852ad73134efb888d23.png';
 
 const menuItems = [
   {

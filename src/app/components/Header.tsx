@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import logoImage from "figma:asset/a4cd36ae604a6bb03d53f6750a1e171b23e9af13.png";
+import logoImage from "@/assets/a4cd36ae604a6bb03d53f6750a1e171b23e9af13.png";
 
 export function Header() {
   return (

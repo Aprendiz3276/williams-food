@@ -1,9 +1,14 @@
-// Assuming the original content before the change was something like this
+// Updated content of MenuGrid.tsx
 
-const items = [
-    // other items
-    "Salchichoneta", // Line 28
-    // other items
-];
+// The rest of the file content...
 
-// other code
+const MenuGrid = () => {
+  // Other codes...
+
+  // Line 28 change
+  const item = 'Salchitocineta';
+
+  // More items and return statement...
+};
+
+export default MenuGrid;

@@ -25,7 +25,7 @@ const menuItems = [
   },
   {
     id: 4,
-    name: 'Salchichoneta',
+    name: 'Salchitocineta',
     image: img4
   },
   {
@@ -110,7 +110,7 @@ export function MenuGrid() {
               </div>
             )}
             
-            {/* Nombre del plato - solo para Salchichoneta */}
+            {/* Nombre del plato - solo para Salchitocineta */}
             {item.id === 4 && (
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-2 sm:p-3">
                 <p 

@@ -11,12 +11,12 @@ export function MenuModal({ isOpen, onClose }: MenuModalProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const imageRefs = useRef<Array<HTMLImageElement | null>>([]);
 
-  // Use public assets so the images do not need to be imported at build time.
+  // Use public SVG placeholders
   const images = [
-    '/menu-1.png',
-    '/menu-2.png',
-    '/menu-3.png',
-    '/menu-4.png',
+    '/menu-1.svg',
+    '/menu-2.svg',
+    '/menu-3.svg',
+    '/menu-4.svg',
   ];
 
   useEffect(() => {
@@ -33,7 +33,6 @@ export function MenuModal({ isOpen, onClose }: MenuModalProps) {
   }, [isOpen, onClose, images.length]);
 
   useEffect(() => {
-    // Scroll active image into view smoothly
     const imgNode = imageRefs.current[index];
     if (imgNode) imgNode.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }, [index]);
@@ -103,12 +102,6 @@ export function MenuModal({ isOpen, onClose }: MenuModalProps) {
                     src={src}
                     alt={`Menú página ${i + 1}`}
                     className="max-w-full max-h-[92vh] object-contain rounded-lg shadow-2xl bg-black/60"
-                    onError={(e) => {
-                      // Show a simple placeholder if the image is not available
-                      const el = e.currentTarget as HTMLImageElement;
-                      el.style.objectFit = 'contain';
-                      el.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='1600'><rect width='100%' height='100%' fill='#111'/><text x='50%' y='50%' fill='#777' font-size='28' font-family='Poppins,Inter,Arial' text-anchor='middle' dy='.35em'>Imagen no encontrada</text></svg>`);
-                    }}
                   />
                 </div>
               ))}
@@ -132,10 +125,6 @@ export function MenuModal({ isOpen, onClose }: MenuModalProps) {
                     src={src}
                     alt={`mini ${i + 1}`}
                     className="w-20 h-16 object-cover rounded-md"
-                    onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).src = '';
-                      (e.currentTarget as HTMLImageElement).style.background = '#111';
-                    }}
                   />
                   <div className="text-left">
                     <div className="text-sm text-white font-semibold">Página {i + 1}</div>

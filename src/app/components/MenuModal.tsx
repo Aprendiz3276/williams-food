@@ -1,6 +1,5 @@
-import { X } from 'lucide-react';
-import menuImage1 from '@/assets/4faac757aef4d11eb3228f2f3aa02c591ccca4a5.png';
-import menuImage2 from '@/assets/ed410f4b4c9ec130de59faebe84246d0dd3ac657.png';
+import { useEffect, useRef, useState } from 'react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface MenuModalProps {
   isOpen: boolean;
@@ -8,65 +7,156 @@ interface MenuModalProps {
 }
 
 export function MenuModal({ isOpen, onClose }: MenuModalProps) {
+  const [index, setIndex] = useState(0);
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const imageRefs = useRef<Array<HTMLImageElement | null>>([]);
+
+  // Use public assets so the images do not need to be imported at build time.
+  const images = [
+    '/menu-1.png',
+    '/menu-2.png',
+    '/menu-3.png',
+    '/menu-4.png',
+  ];
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    function onKey(e: KeyboardEvent) {
+      if (e.key === 'Escape') onClose();
+      if (e.key === 'ArrowRight') setIndex((i) => Math.min(i + 1, images.length - 1));
+      if (e.key === 'ArrowLeft') setIndex((i) => Math.max(i - 1, 0));
+    }
+
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [isOpen, onClose, images.length]);
+
+  useEffect(() => {
+    // Scroll active image into view smoothly
+    const imgNode = imageRefs.current[index];
+    if (imgNode) imgNode.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, [index]);
+
   if (!isOpen) return null;
 
   return (
-    <div 
-      className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/90 backdrop-blur-sm"
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/95"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Menú Digital - pantalla completa"
       onClick={onClose}
     >
-      <div 
-        className="relative w-full max-w-4xl max-h-[90vh] bg-[#0D0D0D] rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-[#FFD700]/30 shadow-2xl shadow-[#FF3C00]/50"
+      <div
+        className="relative w-full h-full md:p-8"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header del modal */}
-        <div className="sticky top-0 z-10 bg-gradient-to-r from-[#FF3C00] to-[#FFD700] p-3 sm:p-4 flex items-center justify-between">
-          <h2 
-            className="text-white text-lg sm:text-xl md:text-2xl"
-            style={{ fontFamily: 'Poppins, sans-serif' }}
-          >
+        {/* Top bar */}
+        <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-40">
+          <div className="text-white/90 font-bold text-xl" style={{ fontFamily: 'Poppins, sans-serif' }}>
             Menú Digital
-          </h2>
-          <button
-            onClick={onClose}
-            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition-all duration-300 hover:scale-110"
-          >
-            <X className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-          </button>
+          </div>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setIndex((i) => Math.max(i - 1, 0))}
+              className="hidden sm:inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-white/90 hover:bg-white/20 transition"
+              aria-label="Anterior"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+
+            <button
+              onClick={() => setIndex((i) => Math.min(i + 1, images.length - 1))}
+              className="hidden sm:inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-white/90 hover:bg-white/20 transition"
+              aria-label="Siguiente"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+
+            <button
+              onClick={onClose}
+              className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition"
+              aria-label="Cerrar menú"
+            >
+              <X className="w-5 h-5 text-white" />
+            </button>
+          </div>
         </div>
 
-        {/* Contenido del modal con scroll */}
-        <div className="overflow-y-auto max-h-[calc(90vh-60px)] sm:max-h-[calc(90vh-80px)] p-3 sm:p-4 space-y-3 sm:space-y-4">
-          {/* Primera imagen del menú */}
-          <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-lg shadow-[#FFD700]/20 border border-[#FFD700]/20">
-            <img 
-              src={menuImage1} 
-              alt="Menú Williams Food - Salchipapas"
-              className="w-full h-auto"
-            />
-          </div>
-
-          {/* Segunda imagen del menú */}
-          <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-lg shadow-[#FFD700]/20 border border-[#FFD700]/20">
-            <img 
-              src={menuImage2} 
-              alt="Menú Williams Food - Super William's"
-              className="w-full h-auto"
-            />
-          </div>
-
-          {/* Botón de WhatsApp al final */}
-          <div className="pt-1 sm:pt-2 pb-2 sm:pb-4">
-            <a 
-              href="https://wa.me/573167226947"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full py-3 sm:py-4 rounded-xl bg-gradient-to-r from-[#FF3C00] to-[#FFD700] text-white hover:scale-[1.02] transition-all duration-300 shadow-lg shadow-[#FF3C00]/30 text-center text-base sm:text-lg"
-              style={{ fontFamily: 'Poppins, sans-serif' }}
+        {/* Content area */}
+        <div className="flex flex-col md:flex-row h-full w-full">
+          {/* Main images - full height */}
+          <div className="flex-1 h-full overflow-hidden flex items-center justify-center">
+            <div
+              ref={containerRef}
+              className="w-full h-full flex items-center justify-center overflow-x-auto scroll-smooth snap-x snap-mandatory"
             >
-              Hacer pedido por WhatsApp
-            </a>
+              {images.map((src, i) => (
+                <div
+                  key={src}
+                  id={`menu-img-${i}`}
+                  className={`flex-shrink-0 snap-center w-full h-full flex items-center justify-center p-6 md:p-10 transition-opacity duration-300 ${i === index ? 'opacity-100' : 'opacity-30'}`}
+                >
+                  <img
+                    ref={(el) => (imageRefs.current[i] = el)}
+                    src={src}
+                    alt={`Menú página ${i + 1}`}
+                    className="max-w-full max-h-[92vh] object-contain rounded-lg shadow-2xl bg-black/60"
+                    onError={(e) => {
+                      // Show a simple placeholder if the image is not available
+                      const el = e.currentTarget as HTMLImageElement;
+                      el.style.objectFit = 'contain';
+                      el.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='1600'><rect width='100%' height='100%' fill='#111'/><text x='50%' y='50%' fill='#777' font-size='28' font-family='Poppins,Inter,Arial' text-anchor='middle' dy='.35em'>Imagen no encontrada</text></svg>`);
+                    }}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
+
+          {/* Thumbnails / sidebar - visible on md+ */}
+          <aside className="hidden md:flex md:flex-col md:w-80 lg:w-96 bg-gradient-to-t from-black/30 to-transparent p-4 gap-4 overflow-y-auto">
+            <div className="text-white/90 font-semibold" style={{ fontFamily: 'Poppins, sans-serif' }}>
+              Galería
+            </div>
+
+            <div className="flex-1 space-y-3">
+              {images.map((src, i) => (
+                <button
+                  key={src}
+                  onClick={() => setIndex(i)}
+                  className={`w-full rounded-lg overflow-hidden border ${i === index ? 'border-[#FFD700] shadow-lg' : 'border-white/10'} bg-white/5 flex items-center gap-3 p-2 transition`}
+                >
+                  <img
+                    src={src}
+                    alt={`mini ${i + 1}`}
+                    className="w-20 h-16 object-cover rounded-md"
+                    onError={(e) => {
+                      (e.currentTarget as HTMLImageElement).src = '';
+                      (e.currentTarget as HTMLImageElement).style.background = '#111';
+                    }}
+                  />
+                  <div className="text-left">
+                    <div className="text-sm text-white font-semibold">Página {i + 1}</div>
+                    <div className="text-xs text-white/60">Toca para ver</div>
+                  </div>
+                </button>
+              ))}
+            </div>
+
+            <div>
+              <a
+                href="https://wa.me/573167226947"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center py-3 rounded-lg bg-gradient-to-r from-[#FF3C00] to-[#FFD700] text-white font-semibold shadow-lg"
+                style={{ fontFamily: 'Poppins, sans-serif' }}
+              >
+                Hacer pedido por WhatsApp
+              </a>
+            </div>
+          </aside>
         </div>
       </div>
     </div>

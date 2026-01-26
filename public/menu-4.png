@@ -1,0 +1,198 @@
+<svg viewBox="0 0 1000 1400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a3a3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1000" height="1400" fill="url(#bgGrad)"/>
+  
+  <!-- Top bar with colors -->
+  <rect x="0" y="0" width="1000" height="100" fill="#2a2a2a"/>
+  <rect x="0" y="0" width="1000" height="15" fill="#FF3C00"/>
+  
+  <!-- Title section -->
+  <text x="50" y="70" font-size="36" font-weight="bold" fill="white" font-family="Poppins, sans-serif">ADICIONALES</text>
+  <text x="50" y="100" font-size="32" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">&amp; BEBIDAS</text>
+  
+  <!-- Subtitle -->
+  <text x="50" y="130" font-size="16" fill="#aaa" font-family="Arial">Personaliza tu pedido con nuestros deliciosos adicionales.</text>
+  
+  <!-- ADICIONALES Section -->
+  <text x="50" y="180" font-size="22" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">ADICIONALES</text>
+  
+  <!-- Grid: 2 columns of adicionales -->
+  <!-- Row 1 -->
+  <g>
+    <rect x="50" y="210" width="400" height="80" fill="rgba(255, 215, 0, 0.1)" stroke="#FFD700" stroke-width="2" rx="8"/>
+    <text x="70" y="240" font-size="18" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Queso</text>
+    <text x="280" y="240" font-size="16" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$8.000</text>
+  </g>
+  
+  <g>
+    <rect x="550" y="210" width="400" height="80" fill="rgba(255, 100, 0, 0.1)" stroke="#FF3C00" stroke-width="2" rx="8"/>
+    <text x="570" y="240" font-size="18" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Maiz</text>
+    <text x="780" y="240" font-size="16" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$4.500</text>
+  </g>
+  
+  <!-- Row 2 -->
+  <g>
+    <rect x="50" y="320" width="400" height="80" fill="rgba(255, 215, 0, 0.1)" stroke="#FFD700" stroke-width="2" rx="8"/>
+    <text x="70" y="350" font-size="18" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Guacamole</text>
+    <text x="280" y="350" font-size="16" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$4.500</text>
+  </g>
+  
+  <g>
+    <rect x="550" y="320" width="400" height="80" fill="rgba(255, 100, 0, 0.1)" stroke="#FF3C00" stroke-width="2" rx="8"/>
+    <text x="570" y="350" font-size="18" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Pollo</text>
+    <text x="780" y="350" font-size="16" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$7.500</text>
+  </g>
+  
+  <!-- Row 3 -->
+  <g>
+    <rect x="50" y="430" width="400" height="80" fill="rgba(255, 215, 0, 0.1)" stroke="#FFD700" stroke-width="2" rx="8"/>
+    <text x="70" y="460" font-size="18" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Costilla</text>
+    <text x="280" y="460" font-size="16" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$9.000</text>
+  </g>
+  
+  <g>
+    <rect x="550" y="430" width="400" height="80" fill="rgba(255, 100, 0, 0.1)" stroke="#FF3C00" stroke-width="2" rx="8"/>
+    <text x="570" y="460" font-size="18" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Chorizo</text>
+    <text x="780" y="460" font-size="16" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$9.000</text>
+  </g>
+  
+  <!-- Row 4 -->
+  <g>
+    <rect x="50" y="540" width="400" height="80" fill="rgba(255, 215, 0, 0.1)" stroke="#FFD700" stroke-width="2" rx="8"/>
+    <text x="70" y="570" font-size="18" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Tocineta</text>
+    <text x="280" y="570" font-size="16" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$6.500</text>
+  </g>
+  
+  <g>
+    <rect x="550" y="540" width="400" height="80" fill="rgba(255, 100, 0, 0.1)" stroke="#FF3C00" stroke-width="2" rx="8"/>
+    <text x="570" y="570" font-size="18" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Ranchera</text>
+    <text x="780" y="570" font-size="16" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$8.000</text>
+  </g>
+  
+  <!-- Row 5 -->
+  <g>
+    <rect x="50" y="650" width="400" height="80" fill="rgba(255, 215, 0, 0.1)" stroke="#FFD700" stroke-width="2" rx="8"/>
+    <text x="70" y="680" font-size="18" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Maduro</text>
+    <text x="280" y="680" font-size="16" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$6.000</text>
+  </g>
+  
+  <g>
+    <rect x="550" y="650" width="400" height="80" fill="rgba(255, 100, 0, 0.1)" stroke="#FF3C00" stroke-width="2" rx="8"/>
+    <text x="570" y="680" font-size="18" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Pico de gallo</text>
+    <text x="780" y="680" font-size="16" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$4.000</text>
+  </g>
+  
+  <!-- Row 6 -->
+  <g>
+    <rect x="50" y="760" width="400" height="80" fill="rgba(255, 215, 0, 0.1)" stroke="#FFD700" stroke-width="2" rx="8"/>
+    <text x="70" y="790" font-size="18" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Francesa</text>
+    <text x="280" y="790" font-size="16" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$8.000</text>
+  </g>
+  
+  <g>
+    <rect x="550" y="760" width="400" height="80" fill="rgba(255, 100, 0, 0.1)" stroke="#FF3C00" stroke-width="2" rx="8"/>
+    <text x="570" y="790" font-size="18" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Kabano</text>
+    <text x="780" y="790" font-size="16" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$8.000</text>
+  </g>
+  
+  <!-- PA'QUITAR LA SED Section -->
+  <text x="50" y="900" font-size="22" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">PA' QUITAR LA SED</text>
+  
+  <!-- Beverages grid -->
+  <!-- Row 1 -->
+  <g>
+    <rect x="50" y="930" width="880" height="70" fill="rgba(255, 255, 255, 0.05)" stroke="#FFD700" stroke-width="2" rx="8"/>
+    <text x="70" y="962" font-size="16" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Postobon 1.5 Lt</text>
+    <text x="800" y="962" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$8.000</text>
+  </g>
+  
+  <!-- Row 2 -->
+  <g>
+    <rect x="50" y="1020" width="880" height="70" fill="rgba(255, 100, 0, 0.08)" stroke="#FF3C00" stroke-width="2" rx="8"/>
+    <text x="70" y="1052" font-size="16" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Coca-Cola 1.5 Lt</text>
+    <text x="800" y="1052" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$9.500</text>
+  </g>
+  
+  <!-- Row 3 -->
+  <g>
+    <rect x="50" y="1110" width="880" height="70" fill="rgba(255, 255, 255, 0.05)" stroke="#FFD700" stroke-width="2" rx="8"/>
+    <text x="70" y="1142" font-size="16" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Hit 1 Lt</text>
+    <text x="800" y="1142" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$8.000</text>
+  </g>
+  
+  <!-- Row 4 -->
+  <g>
+    <rect x="50" y="1200" width="880" height="70" fill="rgba(255, 100, 0, 0.08)" stroke="#FF3C00" stroke-width="2" rx="8"/>
+    <text x="70" y="1232" font-size="16" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Hit personal</text>
+    <text x="800" y="1232" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$4.000</text>
+  </g>
+  
+  <!-- Bottom bar -->
+  <rect x="0" y="1340" width="1000" height="60" fill="#2a2a2a"/>
+  <text x="500" y="1373" font-size="14" text-anchor="middle" fill="#FFD700" font-family="Poppins, sans-serif">🍔 HAZ TU PEDIDO POR WHATSAPP 🍔</text>
+</svg>
+  
+  <rect width="768" height="1024" fill="url(#bgGrad)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="650" cy="150" r="120" fill="#FF3C00" opacity="0.1"/>
+  <circle cx="100" cy="800" r="100" fill="#FFD700" opacity="0.1"/>
+  
+  <!-- Title -->
+  <text x="384" y="80" font-size="48" font-weight="bold" fill="#FFFFFF" text-anchor="middle" font-family="Poppins">ADICIONALES</text>
+  <text x="384" y="140" font-size="44" font-weight="bold" fill="#FFD700" text-anchor="middle" font-family="Poppins">&amp; BEBIDAS</text>
+  <text x="384" y="180" font-size="14" fill="#FFFFFF/70" text-anchor="middle" font-family="Arial">Personaliza tu pedido con nuestros deliciosos complementos</text>
+  
+  <!-- Adicionales section -->
+  <text x="50" y="240" font-size="18" font-weight="bold" fill="#FFD700" font-family="Poppins">ADICIONALES</text>
+  
+  <!-- Grid of items -->
+  <rect x="50" y="270" width="308" height="60" rx="10" fill="rgba(255,217,0,0.15)" stroke="#FFD700" stroke-width="1.5"/>
+  <text x="70" y="295" font-size="14" font-weight="bold" fill="#FFFFFF" font-family="Poppins">Queso</text>
+  <text x="250" y="295" font-size="13" fill="#FFD700" font-weight="bold" font-family="Arial">$8.000</text>
+  
+  <rect x="410" y="270" width="308" height="60" rx="10" fill="rgba(255,217,0,0.15)" stroke="#FFD700" stroke-width="1.5"/>
+  <text x="430" y="295" font-size="14" font-weight="bold" fill="#FFFFFF" font-family="Poppins">Maiz</text>
+  <text x="610" y="295" font-size="13" fill="#FFD700" font-weight="bold" font-family="Arial">$4.500</text>
+  
+  <rect x="50" y="350" width="308" height="60" rx="10" fill="rgba(255,217,0,0.15)" stroke="#FFD700" stroke-width="1.5"/>
+  <text x="70" y="375" font-size="14" font-weight="bold" fill="#FFFFFF" font-family="Poppins">Guacamole</text>
+  <text x="250" y="375" font-size="13" fill="#FFD700" font-weight="bold" font-family="Arial">$4.500</text>
+  
+  <rect x="410" y="350" width="308" height="60" rx="10" fill="rgba(255,217,0,0.15)" stroke="#FFD700" stroke-width="1.5"/>
+  <text x="430" y="375" font-size="14" font-weight="bold" fill="#FFFFFF" font-family="Poppins">Pollo</text>
+  <text x="610" y="375" font-size="13" fill="#FFD700" font-weight="bold" font-family="Arial">$7.500</text>
+  
+  <rect x="50" y="430" width="308" height="60" rx="10" fill="rgba(255,217,0,0.15)" stroke="#FFD700" stroke-width="1.5"/>
+  <text x="70" y="455" font-size="14" font-weight="bold" fill="#FFFFFF" font-family="Poppins">Costilla</text>
+  <text x="250" y="455" font-size="13" fill="#FFD700" font-weight="bold" font-family="Arial">$9.000</text>
+  
+  <rect x="410" y="430" width="308" height="60" rx="10" fill="rgba(255,217,0,0.15)" stroke="#FFD700" stroke-width="1.5"/>
+  <text x="430" y="455" font-size="14" font-weight="bold" fill="#FFFFFF" font-family="Poppins">Chorizo</text>
+  <text x="610" y="455" font-size="13" fill="#FFD700" font-weight="bold" font-family="Arial">$9.000</text>
+  
+  <!-- Bebidas section -->
+  <text x="50" y="550" font-size="18" font-weight="bold" fill="#FFD700" font-family="Poppins">PA' QUITAR LA SED</text>
+  
+  <rect x="50" y="580" width="668" height="55" rx="10" fill="rgba(255,255,255,0.05)" stroke="#FF3C00" stroke-width="1.5"/>
+  <text x="70" y="610" font-size="14" font-weight="bold" fill="#FFFFFF" font-family="Poppins">Postobón 1.5 Lt</text>
+  <text x="650" y="610" font-size="13" fill="#FFD700" font-weight="bold" text-anchor="end" font-family="Arial">$8.000</text>
+  
+  <rect x="50" y="650" width="668" height="55" rx="10" fill="rgba(255,255,255,0.05)" stroke="#FF3C00" stroke-width="1.5"/>
+  <text x="70" y="680" font-size="14" font-weight="bold" fill="#FFFFFF" font-family="Poppins">Coca-Cola 1.5 Lt</text>
+  <text x="650" y="680" font-size="13" fill="#FFD700" font-weight="bold" text-anchor="end" font-family="Arial">$9.500</text>
+  
+  <rect x="50" y="720" width="668" height="55" rx="10" fill="rgba(255,255,255,0.05)" stroke="#FF3C00" stroke-width="1.5"/>
+  <text x="70" y="750" font-size="14" font-weight="bold" fill="#FFFFFF" font-family="Poppins">Hit 1 Lt</text>
+  <text x="650" y="750" font-size="13" fill="#FFD700" font-weight="bold" text-anchor="end" font-family="Arial">$8.000</text>
+  
+  <rect x="50" y="790" width="668" height="55" rx="10" fill="rgba(255,255,255,0.05)" stroke="#FF3C00" stroke-width="1.5"/>
+  <text x="70" y="820" font-size="14" font-weight="bold" fill="#FFFFFF" font-family="Poppins">Gaseosa 3 litros</text>
+  <text x="650" y="820" font-size="13" fill="#FFD700" font-weight="bold" text-anchor="end" font-family="Arial">$14.000</text>
+</svg>

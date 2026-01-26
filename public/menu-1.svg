@@ -1,43 +1,109 @@
-<svg viewBox="0 0 768 1024" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1000 1400" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#3a3a3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
     </linearGradient>
   </defs>
   
-  <rect width="768" height="1024" fill="url(#bgGrad)"/>
+  <rect width="1000" height="1400" fill="url(#bgGrad)"/>
   
-  <!-- Decorative circles -->
-  <circle cx="650" cy="150" r="120" fill="#FF3C00" opacity="0.1"/>
-  <circle cx="100" cy="800" r="100" fill="#FFD700" opacity="0.1"/>
+  <!-- Top bar with colors -->
+  <rect x="0" y="0" width="1000" height="100" fill="#2a2a2a"/>
+  <rect x="0" y="0" width="1000" height="15" fill="#FF3C00"/>
   
-  <!-- Title -->
-  <text x="384" y="80" font-size="48" font-weight="bold" fill="#FFFFFF" text-anchor="middle" font-family="Poppins">SALCHIPAPAS</text>
-  <text x="384" y="140" font-size="36" font-weight="bold" fill="#FFD700" text-anchor="middle" font-family="Poppins">PARA 2 PERSONAS</text>
+  <!-- Title section -->
+  <text x="50" y="70" font-size="36" font-weight="bold" fill="white" font-family="Poppins, sans-serif">SALCHIPAPAS</text>
+  <text x="50" y="85" font-size="24" fill="#FFD700" font-family="Poppins, sans-serif">PARA 2 PERSONAS</text>
   
-  <!-- Image placeholder -->
-  <circle cx="384" cy="320" r="140" fill="#FFD700" opacity="0.3"/>
-  <circle cx="384" cy="320" r="130" fill="#FF3C00" opacity="0.2"/>
-  <text x="384" y="330" font-size="24" fill="#FFD700" text-anchor="middle" font-family="Arial">🍟</text>
+  <!-- Food image area -->
+  <rect x="100" y="140" width="800" height="280" fill="rgba(255, 100, 0, 0.15)" stroke="#FFD700" stroke-width="3" rx="8" stroke-dasharray="10,5"/>
+  <circle cx="500" cy="280" r="100" fill="#FF3C00" opacity="0.2"/>
+  <text x="500" y="290" font-size="60" text-anchor="middle" fill="#FFD700" opacity="0.6">🍟</text>
+  <text x="500" y="340" font-size="16" text-anchor="middle" fill="#FFD700" opacity="0.7">Imagen de producto</text>
   
-  <!-- Menu items -->
-  <rect x="50" y="500" width="668" height="100" rx="15" fill="rgba(255,255,255,0.05)" stroke="#FFD700" stroke-width="2"/>
-  <text x="70" y="535" font-size="20" font-weight="bold" fill="#FFFFFF" font-family="Poppins">Sencilla</text>
-  <text x="70" y="560" font-size="14" fill="#FFFFFF/80" font-family="Arial">papa, salchicha y salsas</text>
-  <text x="480" y="545" font-size="16" font-weight="bold" fill="#FFD700" font-family="Poppins">$10.000</text>
+  <!-- Menu items grid -->
+  <!-- Row 1 -->
+  <g>
+    <!-- Item 1: Sencilla -->
+    <rect x="50" y="480" width="420" height="180" fill="rgba(255, 255, 255, 0.08)" stroke="#FFD700" stroke-width="2" rx="12"/>
+    <text x="70" y="515" font-size="24" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Sencilla</text>
+    <text x="70" y="543" font-size="14" fill="#aaa" font-family="Arial">papa, salchicha y salsas</text>
+    <line x1="70" y1="560" x2="450" y2="560" stroke="#FFD700" stroke-width="1" opacity="0.3"/>
+    <text x="70" y="585" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Amarilla:</text>
+    <text x="270" y="585" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$10.000</text>
+    <text x="70" y="615" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Francesa:</text>
+    <text x="270" y="615" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$11.000</text>
+  </g>
   
-  <rect x="50" y="620" width="668" height="100" rx="15" fill="rgba(255,255,255,0.05)" stroke="#FFD700" stroke-width="2"/>
-  <text x="70" y="655" font-size="20" font-weight="bold" fill="#FFFFFF" font-family="Poppins">Salchipollo</text>
-  <text x="70" y="680" font-size="14" fill="#FFFFFF/80" font-family="Arial">papa, salchicha, salsas, ripio, queso y pollo</text>
-  <text x="480" y="665" font-size="16" font-weight="bold" fill="#FFD700" font-family="Poppins">$29.000</text>
+  <!-- Item 2: Gratinada -->
+  <g>
+    <rect x="530" y="480" width="420" height="180" fill="rgba(255, 255, 255, 0.08)" stroke="#FF3C00" stroke-width="2" rx="12"/>
+    <text x="550" y="515" font-size="24" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Gratinada</text>
+    <text x="550" y="543" font-size="14" fill="#aaa" font-family="Arial">papa, salchicha, salsas, ripio y queso</text>
+    <line x1="550" y1="560" x2="930" y2="560" stroke="#FF3C00" stroke-width="1" opacity="0.3"/>
+    <text x="550" y="585" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Amarilla:</text>
+    <text x="750" y="585" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$21.000</text>
+    <text x="550" y="615" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Francesa:</text>
+    <text x="750" y="615" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$22.000</text>
+  </g>
   
-  <rect x="50" y="740" width="668" height="100" rx="15" fill="rgba(255,255,255,0.05)" stroke="#FFD700" stroke-width="2"/>
-  <text x="70" y="775" font-size="20" font-weight="bold" fill="#FFFFFF" font-family="Poppins">Sanchorizo</text>
-  <text x="70" y="800" font-size="14" fill="#FFFFFF/80" font-family="Arial">papa, salchicha, salsas, ripio, queso y chorizo</text>
-  <text x="480" y="785" font-size="16" font-weight="bold" fill="#FFD700" font-family="Poppins">$33.000</text>
+  <!-- Row 2 -->
+  <!-- Item 3: Salchipollo -->
+  <g>
+    <rect x="50" y="730" width="420" height="200" fill="rgba(255, 255, 255, 0.08)" stroke="#FFD700" stroke-width="2" rx="12"/>
+    <text x="70" y="768" font-size="24" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Salchipollo</text>
+    <text x="70" y="796" font-size="14" fill="#aaa" font-family="Arial">papa, salchicha, salsas,</text>
+    <text x="70" y="820" font-size="14" fill="#aaa" font-family="Arial">ripio, queso y pollo</text>
+    <line x1="70" y1="840" x2="450" y2="840" stroke="#FFD700" stroke-width="1" opacity="0.3"/>
+    <text x="70" y="870" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Amarilla:</text>
+    <text x="270" y="870" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$29.000</text>
+    <text x="70" y="900" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Francesa:</text>
+    <text x="270" y="900" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$30.000</text>
+  </g>
   
-  <!-- Footer -->
-  <rect x="0" y="900" width="768" height="124" fill="rgba(255,60,0,0.1)"/>
-  <text x="384" y="960" font-size="14" fill="#FFFFFF/70" text-anchor="middle" font-family="Arial">Ordena ahora por WhatsApp</text>
+  <!-- Item 4: Salchimaiz -->
+  <g>
+    <rect x="530" y="730" width="420" height="200" fill="rgba(255, 255, 255, 0.08)" stroke="#FF3C00" stroke-width="2" rx="12"/>
+    <text x="550" y="768" font-size="24" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Salchimaiz</text>
+    <text x="550" y="796" font-size="14" fill="#aaa" font-family="Arial">papa, salchicha, salsas,</text>
+    <text x="550" y="820" font-size="14" fill="#aaa" font-family="Arial">ripio, queso y maiz</text>
+    <line x1="550" y1="840" x2="930" y2="840" stroke="#FF3C00" stroke-width="1" opacity="0.3"/>
+    <text x="550" y="870" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Amarilla:</text>
+    <text x="750" y="870" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$23.000</text>
+    <text x="550" y="900" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Francesa:</text>
+    <text x="750" y="900" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$24.000</text>
+  </g>
+  
+  <!-- Row 3 -->
+  <!-- Item 5: Sanchorizo -->
+  <g>
+    <rect x="50" y="1000" width="420" height="200" fill="rgba(255, 255, 255, 0.08)" stroke="#FFD700" stroke-width="2" rx="12"/>
+    <text x="70" y="1038" font-size="24" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Sanchorizo</text>
+    <text x="70" y="1066" font-size="14" fill="#aaa" font-family="Arial">papa, salchicha, salsas,</text>
+    <text x="70" y="1090" font-size="14" fill="#aaa" font-family="Arial">ripio, queso y chorizo</text>
+    <line x1="70" y1="1110" x2="450" y2="1110" stroke="#FFD700" stroke-width="1" opacity="0.3"/>
+    <text x="70" y="1140" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Amarilla:</text>
+    <text x="270" y="1140" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$33.000</text>
+    <text x="70" y="1170" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Francesa:</text>
+    <text x="270" y="1170" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$34.000</text>
+  </g>
+  
+  <!-- Item 6: Salchicostilla -->
+  <g>
+    <rect x="530" y="1000" width="420" height="200" fill="rgba(255, 255, 255, 0.08)" stroke="#FF3C00" stroke-width="2" rx="12"/>
+    <text x="550" y="1038" font-size="24" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Salchicostilla</text>
+    <text x="550" y="1066" font-size="14" fill="#aaa" font-family="Arial">papa, salchicha, salsas,</text>
+    <text x="550" y="1090" font-size="14" fill="#aaa" font-family="Arial">ripio, queso y costilla</text>
+    <line x1="550" y1="1110" x2="930" y2="1110" stroke="#FF3C00" stroke-width="1" opacity="0.3"/>
+    <text x="550" y="1140" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Amarilla:</text>
+    <text x="750" y="1140" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$36.000</text>
+    <text x="550" y="1170" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Francesa:</text>
+    <text x="750" y="1170" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$37.000</text>
+  </g>
+  
+  <!-- Bottom bar -->
+  <rect x="0" y="1280" width="1000" height="120" fill="#2a2a2a"/>
+  <text x="500" y="1330" font-size="16" text-anchor="middle" fill="#FFD700" font-family="Poppins, sans-serif">🍔 HAZ TU PEDIDO POR WHATSAPP 🍔</text>
+  <text x="500" y="1365" font-size="14" text-anchor="middle" fill="#999" font-family="Arial">Williams Food - Disfruta nuestras deliciosas salchipapas</text>
 </svg>

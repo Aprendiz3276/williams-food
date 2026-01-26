@@ -1,43 +1,69 @@
-<svg viewBox="0 0 768 1024" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1000 1400" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#3a3a3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
     </linearGradient>
   </defs>
   
-  <rect width="768" height="1024" fill="url(#bgGrad)"/>
+  <rect width="1000" height="1400" fill="url(#bgGrad)"/>
   
-  <!-- Decorative elements -->
-  <circle cx="650" cy="150" r="120" fill="#FF3C00" opacity="0.1"/>
-  <circle cx="100" cy="800" r="100" fill="#FFD700" opacity="0.1"/>
+  <!-- Top bar with colors -->
+  <rect x="0" y="0" width="1000" height="100" fill="#2a2a2a"/>
+  <rect x="0" y="0" width="1000" height="15" fill="#FF3C00"/>
   
-  <!-- Title -->
-  <text x="384" y="80" font-size="48" font-weight="bold" fill="#FFFFFF" text-anchor="middle" font-family="Poppins">SALCHIPAPAS</text>
-  <text x="384" y="140" font-size="36" font-weight="bold" fill="#FFD700" text-anchor="middle" font-family="Poppins">PARA 3 Ó 4 PERSONAS</text>
-  <text x="384" y="180" font-size="16" fill="#FFFFFF/70" text-anchor="middle" font-family="Arial">Nuestras especialidades de la casa</text>
+  <!-- Title section -->
+  <text x="50" y="70" font-size="36" font-weight="bold" fill="white" font-family="Poppins, sans-serif">SALCHIPAPAS</text>
+  <text x="50" y="85" font-size="24" fill="#FFD700" font-family="Poppins, sans-serif">PARA 3 Ó 4 PERSONAS</text>
   
-  <!-- Image placeholder -->
-  <circle cx="384" cy="320" r="140" fill="#FFD700" opacity="0.3"/>
-  <circle cx="384" cy="320" r="130" fill="#FF3C00" opacity="0.2"/>
-  <text x="384" y="330" font-size="28" text-anchor="middle" font-family="Arial">🌮</text>
+  <!-- Subtitle -->
+  <text x="50" y="130" font-size="18" fill="#aaa" font-family="Arial">Nuestras especialidades de la casa</text>
+  
+  <!-- Food image area -->
+  <rect x="100" y="160" width="800" height="260" fill="rgba(255, 100, 0, 0.15)" stroke="#FFD700" stroke-width="3" rx="8" stroke-dasharray="10,5"/>
+  <circle cx="500" cy="290" r="90" fill="#FF3C00" opacity="0.2"/>
+  <text x="500" y="298" font-size="56" text-anchor="middle" fill="#FFD700" opacity="0.6">🍟</text>
   
   <!-- Menu items -->
-  <rect x="50" y="480" width="668" height="120" rx="15" fill="rgba(255,255,255,0.05)" stroke="#FFD700" stroke-width="2"/>
-  <text x="70" y="515" font-size="20" font-weight="bold" fill="#FFFFFF" font-family="Poppins">Werita</text>
-  <text x="70" y="545" font-size="13" fill="#FFFFFF/80" font-family="Arial">papa, salchicha, gratinada, pollo, queso cheddar, pico de gallo, guacamole, costilla</text>
-  <text x="480" y="520" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins">$51.000</text>
+  <!-- Item 1: Werita -->
+  <g>
+    <rect x="60" y="480" width="880" height="220" fill="rgba(255, 255, 255, 0.08)" stroke="#FFD700" stroke-width="2" rx="12"/>
+    <text x="80" y="520" font-size="28" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Werita</text>
+    <text x="80" y="555" font-size="14" fill="#aaa" font-family="Arial">papa, salchicha, gratinada, pollo, queso cheddar, pico de gallo, guacamole, costilla</text>
+    <line x1="80" y1="575" x2="920" y2="575" stroke="#FFD700" stroke-width="1" opacity="0.3"/>
+    <text x="80" y="605" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Amarilla:</text>
+    <text x="300" y="605" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$51.000</text>
+    <text x="550" y="605" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Francesa:</text>
+    <text x="750" y="605" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$52.000</text>
+  </g>
   
-  <rect x="50" y="625" width="668" height="120" rx="15" fill="rgba(255,255,255,0.05)" stroke="#FFD700" stroke-width="2"/>
-  <text x="70" y="660" font-size="20" font-weight="bold" fill="#FFFFFF" font-family="Poppins">Tóxica</text>
-  <text x="70" y="690" font-size="13" fill="#FFFFFF/80" font-family="Arial">papa, salchicha, ripio, gratinada, chorizo, guacamole, costilla, nachos</text>
-  <text x="480" y="665" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins">$52.000</text>
+  <!-- Item 2: Tóxica -->
+  <g>
+    <rect x="60" y="750" width="880" height="230" fill="rgba(255, 255, 255, 0.08)" stroke="#FF3C00" stroke-width="2" rx="12"/>
+    <text x="80" y="793" font-size="28" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Tóxica</text>
+    <text x="80" y="828" font-size="14" fill="#aaa" font-family="Arial">papa, salchicha, ripio, gratinada, chorizo, guacamole, costilla, nachos</text>
+    <line x1="80" y1="848" x2="920" y2="848" stroke="#FF3C00" stroke-width="1" opacity="0.3"/>
+    <text x="80" y="880" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Amarilla:</text>
+    <text x="300" y="880" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$52.000</text>
+    <text x="550" y="880" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Francesa:</text>
+    <text x="750" y="880" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$53.000</text>
+  </g>
   
-  <rect x="50" y="770" width="668" height="120" rx="15" fill="rgba(255,255,255,0.05)" stroke="#FFD700" stroke-width="2"/>
-  <text x="70" y="805" font-size="20" font-weight="bold" fill="#FFFFFF" font-family="Poppins">Tripleta</text>
-  <text x="70" y="835" font-size="13" fill="#FFFFFF/80" font-family="Arial">papa, salchicha, ripio, gratinada, pollo, costilla, tocineta, guacamole, pico de gallo</text>
-  <text x="480" y="810" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins">$53.000</text>
+  <!-- Item 3: Tripleta -->
+  <g>
+    <rect x="60" y="1040" width="880" height="240" fill="rgba(255, 255, 255, 0.08)" stroke="#FFD700" stroke-width="2" rx="12"/>
+    <text x="80" y="1088" font-size="28" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Tripleta</text>
+    <text x="80" y="1123" font-size="14" fill="#aaa" font-family="Arial">papa, salchicha, ripio, gratinada, pollo, costilla, tocineta, guacamole,</text>
+    <text x="80" y="1145" font-size="14" fill="#aaa" font-family="Arial">pico de gallo</text>
+    <line x1="80" y1="1165" x2="920" y2="1165" stroke="#FFD700" stroke-width="1" opacity="0.3"/>
+    <text x="80" y="1200" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Amarilla:</text>
+    <text x="300" y="1200" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$53.000</text>
+    <text x="550" y="1200" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Francesa:</text>
+    <text x="750" y="1200" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$54.000</text>
+  </g>
   
-  <!-- Footer -->
-  <rect x="0" y="920" width="768" height="104" fill="rgba(255,60,0,0.1)"/>
+  <!-- Bottom bar -->
+  <rect x="0" y="1340" width="1000" height="60" fill="#2a2a2a"/>
+  <text x="500" y="1373" font-size="14" text-anchor="middle" fill="#FFD700" font-family="Poppins, sans-serif">🍔 HAZ TU PEDIDO POR WHATSAPP 🍔</text>
+</svg>
 </svg>

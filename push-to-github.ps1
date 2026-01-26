@@ -53,7 +53,8 @@ Write-Host "  1. Agregando URL remota: $repoUrl" -ForegroundColor Yellow
 git remote add origin $repoUrl 2>$null
 if ($LASTEXITCODE -eq 0) {
     Write-Host "     ✅ Remoto agregado correctamente" -ForegroundColor Green
-} else {
+}
+else {
     Write-Host "     ℹ️  El remoto ya estaba configurado" -ForegroundColor Gray
 }
 

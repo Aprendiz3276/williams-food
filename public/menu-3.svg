@@ -1,10 +1,100 @@
-<svg viewBox="0 0 768 1024" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1000 1400" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#3a3a3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
     </linearGradient>
   </defs>
+  
+  <rect width="1000" height="1400" fill="url(#bgGrad)"/>
+  
+  <!-- Top bar with colors -->
+  <rect x="0" y="0" width="1000" height="100" fill="#2a2a2a"/>
+  <rect x="0" y="0" width="1000" height="15" fill="#FF3C00"/>
+  
+  <!-- Title section -->
+  <text x="50" y="75" font-size="48" font-weight="bold" fill="white" font-family="Poppins, sans-serif">SÚPER</text>
+  <text x="50" y="100" font-size="32" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">WILLIAM'S</text>
+  
+  <!-- Food image area -->
+  <rect x="100" y="130" width="800" height="280" fill="rgba(255, 100, 0, 0.15)" stroke="#FFD700" stroke-width="3" rx="8" stroke-dasharray="10,5"/>
+  <rect x="150" y="180" width="700" height="180" fill="#2a2a2a" rx="4"/>
+  <text x="500" y="320" font-size="16" text-anchor="middle" fill="#FFD700" opacity="0.7">Imagen del producto</text>
+  
+  <!-- Description -->
+  <text x="50" y="460" font-size="16" fill="#aaa" font-family="Arial">Incluye papa, salchicha, salsa gratinada, pollo, tocineta, costilla, maduro,</text>
+  <text x="50" y="485" font-size="16" fill="#aaa" font-family="Arial">ranchera, maiz, cabano, ripio y queso.</text>
+  
+  <!-- Menu items grid -->
+  <!-- Item 1: Talla S (2 pers) -->
+  <g>
+    <rect x="50" y="530" width="420" height="150" fill="rgba(255, 255, 255, 0.08)" stroke="#FFD700" stroke-width="2" rx="12"/>
+    <text x="70" y="563" font-size="22" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Talla S (2 pers)</text>
+    <line x1="70" y1="580" x2="450" y2="580" stroke="#FFD700" stroke-width="1" opacity="0.3"/>
+    <text x="70" y="608" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Amarilla:</text>
+    <text x="260" y="608" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$43K</text>
+    <text x="70" y="638" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Francesa:</text>
+    <text x="260" y="638" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$44K</text>
+  </g>
+  
+  <!-- Item 2: Talla M (4 pers) -->
+  <g>
+    <rect x="530" y="530" width="420" height="150" fill="rgba(255, 255, 255, 0.08)" stroke="#FF3C00" stroke-width="2" rx="12"/>
+    <text x="550" y="563" font-size="22" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Talla M (4 pers)</text>
+    <line x1="550" y1="580" x2="930" y2="580" stroke="#FF3C00" stroke-width="1" opacity="0.3"/>
+    <text x="550" y="608" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Amarilla:</text>
+    <text x="740" y="608" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$58K</text>
+    <text x="550" y="638" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Francesa:</text>
+    <text x="740" y="638" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$59K</text>
+  </g>
+  
+  <!-- Item 3: Talla L (6-7 pers) -->
+  <g>
+    <rect x="50" y="750" width="420" height="150" fill="rgba(255, 255, 255, 0.08)" stroke="#FFD700" stroke-width="2" rx="12"/>
+    <text x="70" y="783" font-size="22" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Talla L (6-7 pers)</text>
+    <line x1="70" y1="800" x2="450" y2="800" stroke="#FFD700" stroke-width="1" opacity="0.3"/>
+    <text x="70" y="828" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Amarilla:</text>
+    <text x="260" y="828" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$98K</text>
+    <text x="70" y="858" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Francesa:</text>
+    <text x="260" y="858" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$99K</text>
+  </g>
+  
+  <!-- Item 4: Talla XL (10-15 pers) -->
+  <g>
+    <rect x="530" y="750" width="420" height="150" fill="rgba(255, 255, 255, 0.08)" stroke="#FF3C00" stroke-width="2" rx="12"/>
+    <text x="550" y="783" font-size="22" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Talla XL (10-15 pers)</text>
+    <line x1="550" y1="800" x2="930" y2="800" stroke="#FF3C00" stroke-width="1" opacity="0.3"/>
+    <text x="550" y="835" font-size="14" fill="#FFD700" font-family="Poppins, sans-serif">Valor:</text>
+    <text x="740" y="835" font-size="14" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">$120.000</text>
+  </g>
+  
+  <!-- Tostadas section -->
+  <text x="50" y="970" font-size="28" font-weight="bold" fill="#FFD700" font-family="Poppins, sans-serif">TOSTADAS</text>
+  <text x="50" y="995" font-size="14" fill="#aaa" font-family="Arial">Deliciosas tostadas mexicanas</text>
+  
+  <!-- Tostada 1 -->
+  <g>
+    <rect x="50" y="1020" width="420" height="140" fill="rgba(255, 255, 255, 0.08)" stroke="#FFD700" stroke-width="2" rx="12"/>
+    <text x="70" y="1053" font-size="20" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Tostada con todo</text>
+    <line x1="70" y1="1070" x2="450" y2="1070" stroke="#FFD700" stroke-width="1" opacity="0.3"/>
+    <text x="70" y="1100" font-size="13" fill="#FFD700" font-family="Poppins, sans-serif">Sencilla: $35.000</text>
+    <text x="70" y="1128" font-size="13" fill="#FFD700" font-family="Poppins, sans-serif">Gratinada: $37.000</text>
+  </g>
+  
+  <!-- Tostada 2 -->
+  <g>
+    <rect x="530" y="1020" width="420" height="140" fill="rgba(255, 255, 255, 0.08)" stroke="#FF3C00" stroke-width="2" rx="12"/>
+    <text x="550" y="1053" font-size="20" font-weight="bold" fill="white" font-family="Poppins, sans-serif">Tostada suprema</text>
+    <text x="550" y="1078" font-size="12" fill="#aaa" font-family="Arial">chorizo, costilla, maiz, guacamole,</text>
+    <text x="550" y="1098" font-size="12" fill="#aaa" font-family="Arial">pico de gallo</text>
+    <line x1="550" y1="1110" x2="930" y2="1110" stroke="#FF3C00" stroke-width="1" opacity="0.3"/>
+    <text x="550" y="1138" font-size="13" fill="#FFD700" font-family="Poppins, sans-serif">Sencilla: $29.000 | Gratinada: $31.000</text>
+  </g>
+  
+  <!-- Bottom bar -->
+  <rect x="0" y="1340" width="1000" height="60" fill="#2a2a2a"/>
+  <text x="500" y="1373" font-size="14" text-anchor="middle" fill="#FFD700" font-family="Poppins, sans-serif">🍔 HAZ TU PEDIDO POR WHATSAPP 🍔</text>
+</svg>
   
   <rect width="768" height="1024" fill="url(#bgGrad)"/>
   

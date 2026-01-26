@@ -16,22 +16,22 @@ export function DigitalMenuView({ isOpen, onClose }: DigitalMenuViewProps) {
   const sections: MenuSection[] = [
     {
       id: 1,
-      image: '/menu-1.png',
+      image: '/menu-1.svg',
       title: 'Salchipapas para 2 Personas'
     },
     {
       id: 2,
-      image: '/menu-2.png',
+      image: '/menu-2.svg',
       title: 'Salchipapas para 3 ó 4 Personas'
     },
     {
       id: 3,
-      image: '/menu-3.png',
+      image: '/menu-3.svg',
       title: 'Súper William\'s'
     },
     {
       id: 4,
-      image: '/menu-4.png',
+      image: '/menu-4.svg',
       title: 'Adicionales & Bebidas'
     }
   ];
